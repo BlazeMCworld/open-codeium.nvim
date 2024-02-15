@@ -38,6 +38,6 @@ Valid methods are:
 ## Usage
 
 Firstly, you will need to login, for that use `:CodeiumLogin`. Once that is done you can use your specified keybindings for the completions.
-For getting better completions, you will most likely want to use `CodeiumIndexAdd` with a file or directory, to add it to the index.
-The indexing happens locally, and may take a bit. When specifying a directory, all files will be added recursively. Files already indexed will be skipped, unless they were changed since then.
+For getting better completions, you will most likely want to use `:CodeiumIndexAdd` with a file or directory, to add it to the index.
+The indexing happens locally, and may take a bit. When specifying a directory, all files will be added recursively. Files already indexed will be skipped, unless they were changed since then. You are recommended to setup a `.codeiumignore` file, according to the documentation in the engine repository, in case you want to automatically exclude files.
 For opening the chat, just use `:CodeiumChat`, the chat history will be kept, as long as neovim is open, or until you type `/clear` (or its alias `/new`) into the chat box.
